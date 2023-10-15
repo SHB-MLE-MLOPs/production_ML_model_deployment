@@ -1,0 +1,1 @@
+web: uvicorn building_fastapi_api.create_fastapi_api:api --host 0.0.0.0 --port $PORT

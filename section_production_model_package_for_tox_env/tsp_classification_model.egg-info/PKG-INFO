@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: tsp-classification-model
+Version: 0.0.1
+Summary: Example classification model package from Train In Data.
+Home-page: https://github.com/SHB-MLE-MLOPs/production_ML_model_deployement.git
+Author: SergeBodjona
+Author-email: serge.bodjona@hotmail.com
+License: BSD-3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.10.0
+Description-Content-Type: text/markdown
+Requires-Dist: numpy<2.0.0,>=1.25.2
+Requires-Dist: pandas<3.0.0,>=2.1.0
+Requires-Dist: pydantic<3.0.0,>=2.3.0
+Requires-Dist: pathlib<2.0.0,>=1.0.1
+Requires-Dist: strictyaml<2.0.0,>=1.7.3
+Requires-Dist: PyYAML<7.0.0,>=6.0.1
+Requires-Dist: typing<4.0.0.0,>=3.7.4.3
+Requires-Dist: scikit-learn<2.0.0,>=1.3.1
+Requires-Dist: feature-engine<2.0.0,>=1.6.2
+
+Example classification model package from Train In Data.

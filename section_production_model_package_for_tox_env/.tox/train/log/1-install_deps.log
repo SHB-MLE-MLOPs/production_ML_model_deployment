@@ -1,0 +1,122 @@
+name: train
+run_id: install_deps
+env COMSPEC: C:\WINDOWS\system32\cmd.exe
+env NUMBER_OF_PROCESSORS: 8
+env PATHEXT: .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW
+env PROCESSOR_ARCHITECTURE: AMD64
+env PROGRAMDATA: C:\ProgramData
+env PROGRAMFILES: C:\Program Files
+env PROGRAMFILES(X86): C:\Program Files (x86)
+env SYSTEMDRIVE: C:
+env SYSTEMROOT: C:\WINDOWS
+env TEMP: C:\Users\S6218378\AppData\Local\Temp
+env TMP: C:\Users\S6218378\AppData\Local\Temp
+env USERPROFILE: C:\Users\S6218378
+env PATH: C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env\.tox\test_package\Scripts;C:\Program Files\Python39\Scripts\;C:\Program Files\Python39\;C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\1E\Client\Extensibility\NomadBranch;C:\Program Files\PuTTY\;C:\Program Files (x86)\PIPC\bin\;C:\Program Files\Git\cmd;C:\Users\S6218378\AppData\Local\Microsoft\WindowsApps;;C:\Users\S6218378\AppData\Local\Programs\Microsoft VS Code\bin
+env PIP_DISABLE_PIP_VERSION_CHECK: 1
+env PYTHONIOENCODING: utf-8
+env PYTHONPATH: .
+env PYTHONHASHSEED: 0
+env TOX_ENV_NAME: train
+env TOX_WORK_DIR: C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env\.tox
+env TOX_ENV_DIR: C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env\.tox\test_package
+env VIRTUAL_ENV: C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env\.tox\test_package
+env COLUMNS: 237
+env LINES: 63
+metadata pid: 18052
+cwd: C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env
+allow: C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env\.tox\test_package\Scripts\*:train
+cmd: pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org -r C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env/requirements/test_requirements.txt
+exit_code: 0
+Collecting numpy<2.0.0,>=1.25.2 (from -r C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env/requirements\requirements.txt (line 5))
+  Obtaining dependency information for numpy<2.0.0,>=1.25.2 from https://files.pythonhosted.org/packages/97/43/4cd9dc8c051537ed0613fcfc4229dfb9eb39fe058c8d42632977465bfdb5/numpy-1.26.0-cp39-cp39-win_amd64.whl.metadata
+  Using cached numpy-1.26.0-cp39-cp39-win_amd64.whl.metadata (61 kB)
+Collecting pandas<3.0.0,>=2.1.0 (from -r C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env/requirements\requirements.txt (line 6))
+  Obtaining dependency information for pandas<3.0.0,>=2.1.0 from https://files.pythonhosted.org/packages/f2/8c/35364a11b3e25f8e29a35420b0d18f65ec4f9d6d38e86a62d16ef998923c/pandas-2.1.1-cp39-cp39-win_amd64.whl.metadata
+  Using cached pandas-2.1.1-cp39-cp39-win_amd64.whl.metadata (18 kB)
+Collecting pydantic<3.0.0,>=2.3.0 (from -r C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env/requirements\requirements.txt (line 7))
+  Obtaining dependency information for pydantic<3.0.0,>=2.3.0 from https://files.pythonhosted.org/packages/73/66/0a72c9fcde42e5650c8d8d5c5c1873b9a3893018020c77ca8eb62708b923/pydantic-2.4.2-py3-none-any.whl.metadata
+  Using cached pydantic-2.4.2-py3-none-any.whl.metadata (158 kB)
+Collecting pathlib<2.0.0,>=1.0.1 (from -r C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env/requirements\requirements.txt (line 8))
+  Using cached pathlib-1.0.1-py3-none-any.whl (14 kB)
+Collecting strictyaml<2.0.0,>=1.7.3 (from -r C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env/requirements\requirements.txt (line 9))
+  Using cached strictyaml-1.7.3-py3-none-any.whl (123 kB)
+Collecting PyYAML<7.0.0,>=6.0.1 (from -r C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env/requirements\requirements.txt (line 10))
+  Obtaining dependency information for PyYAML<7.0.0,>=6.0.1 from https://files.pythonhosted.org/packages/84/4d/82704d1ab9290b03da94e6425f5e87396b999fd7eb8e08f3a92c158402bf/PyYAML-6.0.1-cp39-cp39-win_amd64.whl.metadata
+  Using cached PyYAML-6.0.1-cp39-cp39-win_amd64.whl.metadata (2.1 kB)
+Collecting typing<4.0.0.0,>=3.7.4.3 (from -r C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env/requirements\requirements.txt (line 11))
+  Using cached typing-3.7.4.3-py3-none-any.whl
+Collecting scikit-learn<2.0.0,>=1.3.1 (from -r C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env/requirements\requirements.txt (line 12))
+  Obtaining dependency information for scikit-learn<2.0.0,>=1.3.1 from https://files.pythonhosted.org/packages/1b/7c/66d34dc231a309cc3a7f3eeb848319be3b616fd2918db302aaef727eff4a/scikit_learn-1.3.1-cp39-cp39-win_amd64.whl.metadata
+  Using cached scikit_learn-1.3.1-cp39-cp39-win_amd64.whl.metadata (11 kB)
+Collecting feature-engine<2.0.0,>=1.6.2 (from -r C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env/requirements\requirements.txt (line 15))
+  Obtaining dependency information for feature-engine<2.0.0,>=1.6.2 from https://files.pythonhosted.org/packages/62/60/77fcc9d3cfaabab34027aa8ea0025c5e2d4cf9561fa9725a38f0785b43aa/feature_engine-1.6.2-py2.py3-none-any.whl.metadata
+  Using cached feature_engine-1.6.2-py2.py3-none-any.whl.metadata (8.8 kB)
+Collecting pytest<8.0.0,>=7.4.2 (from -r C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env/requirements/test_requirements.txt (line 4))
+  Obtaining dependency information for pytest<8.0.0,>=7.4.2 from https://files.pythonhosted.org/packages/df/d0/e192c4275aecabf74faa1aacd75ef700091913236ec78b1a98f62a2412ee/pytest-7.4.2-py3-none-any.whl.metadata
+  Using cached pytest-7.4.2-py3-none-any.whl.metadata (7.9 kB)
+Collecting python-dateutil>=2.8.2 (from pandas<3.0.0,>=2.1.0->-r C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env/requirements\requirements.txt (line 6))
+  Using cached python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+Collecting pytz>=2020.1 (from pandas<3.0.0,>=2.1.0->-r C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env/requirements\requirements.txt (line 6))
+  Obtaining dependency information for pytz>=2020.1 from https://files.pythonhosted.org/packages/32/4d/aaf7eff5deb402fd9a24a1449a8119f00d74ae9c2efa79f8ef9994261fc2/pytz-2023.3.post1-py2.py3-none-any.whl.metadata
+  Using cached pytz-2023.3.post1-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.1 (from pandas<3.0.0,>=2.1.0->-r C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env/requirements\requirements.txt (line 6))
+  Using cached tzdata-2023.3-py2.py3-none-any.whl (341 kB)
+Collecting annotated-types>=0.4.0 (from pydantic<3.0.0,>=2.3.0->-r C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env/requirements\requirements.txt (line 7))
+  Obtaining dependency information for annotated-types>=0.4.0 from https://files.pythonhosted.org/packages/28/78/d31230046e58c207284c6b2c4e8d96e6d3cb4e52354721b944d3e1ee4aa5/annotated_types-0.6.0-py3-none-any.whl.metadata
+  Using cached annotated_types-0.6.0-py3-none-any.whl.metadata (12 kB)
+Collecting pydantic-core==2.10.1 (from pydantic<3.0.0,>=2.3.0->-r C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env/requirements\requirements.txt (line 7))
+  Obtaining dependency information for pydantic-core==2.10.1 from https://files.pythonhosted.org/packages/9f/9a/321a73f6f1483b1ddd41fae7bb7cf9465461bad8fa132880b97ca462ee1a/pydantic_core-2.10.1-cp39-none-win_amd64.whl.metadata
+  Using cached pydantic_core-2.10.1-cp39-none-win_amd64.whl.metadata (6.6 kB)
+Collecting typing-extensions>=4.6.1 (from pydantic<3.0.0,>=2.3.0->-r C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env/requirements\requirements.txt (line 7))
+  Obtaining dependency information for typing-extensions>=4.6.1 from https://files.pythonhosted.org/packages/24/21/7d397a4b7934ff4028987914ac1044d3b7d52712f30e2ac7a2ae5bc86dd0/typing_extensions-4.8.0-py3-none-any.whl.metadata
+  Using cached typing_extensions-4.8.0-py3-none-any.whl.metadata (3.0 kB)
+Collecting scipy>=1.5.0 (from scikit-learn<2.0.0,>=1.3.1->-r C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env/requirements\requirements.txt (line 12))
+  Obtaining dependency information for scipy>=1.5.0 from https://files.pythonhosted.org/packages/23/86/57a03f715b1398c6c5efa5e62e34d683b6c4b609b0e51df58d48aedde84a/scipy-1.11.3-cp39-cp39-win_amd64.whl.metadata
+  Using cached scipy-1.11.3-cp39-cp39-win_amd64.whl.metadata (60 kB)
+Collecting joblib>=1.1.1 (from scikit-learn<2.0.0,>=1.3.1->-r C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env/requirements\requirements.txt (line 12))
+  Obtaining dependency information for joblib>=1.1.1 from https://files.pythonhosted.org/packages/10/40/d551139c85db202f1f384ba8bcf96aca2f329440a844f924c8a0040b6d02/joblib-1.3.2-py3-none-any.whl.metadata
+  Using cached joblib-1.3.2-py3-none-any.whl.metadata (5.4 kB)
+Collecting threadpoolctl>=2.0.0 (from scikit-learn<2.0.0,>=1.3.1->-r C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env/requirements\requirements.txt (line 12))
+  Obtaining dependency information for threadpoolctl>=2.0.0 from https://files.pythonhosted.org/packages/81/12/fd4dea011af9d69e1cad05c75f3f7202cdcbeac9b712eea58ca779a72865/threadpoolctl-3.2.0-py3-none-any.whl.metadata
+  Using cached threadpoolctl-3.2.0-py3-none-any.whl.metadata (10.0 kB)
+Collecting statsmodels>=0.11.1 (from feature-engine<2.0.0,>=1.6.2->-r C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env/requirements\requirements.txt (line 15))
+  Using cached statsmodels-0.14.0-cp39-cp39-win_amd64.whl (9.4 MB)
+Collecting iniconfig (from pytest<8.0.0,>=7.4.2->-r C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env/requirements/test_requirements.txt (line 4))
+  Using cached iniconfig-2.0.0-py3-none-any.whl (5.9 kB)
+Collecting packaging (from pytest<8.0.0,>=7.4.2->-r C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env/requirements/test_requirements.txt (line 4))
+  Obtaining dependency information for packaging from https://files.pythonhosted.org/packages/ec/1a/610693ac4ee14fcdf2d9bf3c493370e4f2ef7ae2e19217d7a237ff42367d/packaging-23.2-py3-none-any.whl.metadata
+  Using cached packaging-23.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting pluggy<2.0,>=0.12 (from pytest<8.0.0,>=7.4.2->-r C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env/requirements/test_requirements.txt (line 4))
+  Obtaining dependency information for pluggy<2.0,>=0.12 from https://files.pythonhosted.org/packages/05/b8/42ed91898d4784546c5f06c60506400548db3f7a4b3fb441cba4e5c17952/pluggy-1.3.0-py3-none-any.whl.metadata
+  Using cached pluggy-1.3.0-py3-none-any.whl.metadata (4.3 kB)
+Collecting exceptiongroup>=1.0.0rc8 (from pytest<8.0.0,>=7.4.2->-r C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env/requirements/test_requirements.txt (line 4))
+  Obtaining dependency information for exceptiongroup>=1.0.0rc8 from https://files.pythonhosted.org/packages/ad/83/b71e58666f156a39fb29417e4c8ca4bc7400c0dd4ed9e8842ab54dc8c344/exceptiongroup-1.1.3-py3-none-any.whl.metadata
+  Using cached exceptiongroup-1.1.3-py3-none-any.whl.metadata (6.1 kB)
+Collecting tomli>=1.0.0 (from pytest<8.0.0,>=7.4.2->-r C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env/requirements/test_requirements.txt (line 4))
+  Using cached tomli-2.0.1-py3-none-any.whl (12 kB)
+Collecting colorama (from pytest<8.0.0,>=7.4.2->-r C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env/requirements/test_requirements.txt (line 4))
+  Using cached colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas<3.0.0,>=2.1.0->-r C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env/requirements\requirements.txt (line 6))
+  Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
+Collecting patsy>=0.5.2 (from statsmodels>=0.11.1->feature-engine<2.0.0,>=1.6.2->-r C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env/requirements\requirements.txt (line 15))
+  Using cached patsy-0.5.3-py2.py3-none-any.whl (233 kB)
+Using cached numpy-1.26.0-cp39-cp39-win_amd64.whl (15.8 MB)
+Using cached pandas-2.1.1-cp39-cp39-win_amd64.whl (10.8 MB)
+Using cached pydantic-2.4.2-py3-none-any.whl (395 kB)
+Using cached pydantic_core-2.10.1-cp39-none-win_amd64.whl (2.0 MB)
+Using cached PyYAML-6.0.1-cp39-cp39-win_amd64.whl (152 kB)
+Using cached scikit_learn-1.3.1-cp39-cp39-win_amd64.whl (9.3 MB)
+Using cached feature_engine-1.6.2-py2.py3-none-any.whl (328 kB)
+Using cached pytest-7.4.2-py3-none-any.whl (324 kB)
+Using cached annotated_types-0.6.0-py3-none-any.whl (12 kB)
+Using cached exceptiongroup-1.1.3-py3-none-any.whl (14 kB)
+Using cached joblib-1.3.2-py3-none-any.whl (302 kB)
+Using cached pluggy-1.3.0-py3-none-any.whl (18 kB)
+Using cached pytz-2023.3.post1-py2.py3-none-any.whl (502 kB)
+Using cached scipy-1.11.3-cp39-cp39-win_amd64.whl (44.3 MB)
+Using cached packaging-23.2-py3-none-any.whl (53 kB)
+Using cached threadpoolctl-3.2.0-py3-none-any.whl (15 kB)
+Using cached typing_extensions-4.8.0-py3-none-any.whl (31 kB)
+Installing collected packages: pytz, pathlib, tzdata, typing-extensions, typing, tomli, threadpoolctl, six, PyYAML, pluggy, packaging, numpy, joblib, iniconfig, exceptiongroup, colorama, annotated-types, scipy, python-dateutil, pytest, pydantic-core, patsy, strictyaml, scikit-learn, pydantic, pandas, statsmodels, feature-engine
+Successfully installed PyYAML-6.0.1 annotated-types-0.6.0 colorama-0.4.6 exceptiongroup-1.1.3 feature-engine-1.6.2 iniconfig-2.0.0 joblib-1.3.2 numpy-1.26.0 packaging-23.2 pandas-2.1.1 pathlib-1.0.1 patsy-0.5.3 pluggy-1.3.0 pydantic-2.4.2 pydantic-core-2.10.1 pytest-7.4.2 python-dateutil-2.8.2 pytz-2023.3.post1 scikit-learn-1.3.1 scipy-1.11.3 six-1.16.0 statsmodels-0.14.0 strictyaml-1.7.3 threadpoolctl-3.2.0 tomli-2.0.1 typing-3.7.4.3 typing-extensions-4.8.0 tzdata-2023.3

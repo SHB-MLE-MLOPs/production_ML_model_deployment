@@ -1,0 +1,30 @@
+name: train
+run_id: commands[0]
+env COMSPEC: C:\WINDOWS\system32\cmd.exe
+env NUMBER_OF_PROCESSORS: 8
+env PATHEXT: .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW
+env PROCESSOR_ARCHITECTURE: AMD64
+env PROGRAMDATA: C:\ProgramData
+env PROGRAMFILES: C:\Program Files
+env PROGRAMFILES(X86): C:\Program Files (x86)
+env SYSTEMDRIVE: C:
+env SYSTEMROOT: C:\WINDOWS
+env TEMP: C:\Users\S6218378\AppData\Local\Temp
+env TMP: C:\Users\S6218378\AppData\Local\Temp
+env USERPROFILE: C:\Users\S6218378
+env PATH: C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env\.tox\test_package\Scripts;C:\Program Files\Python39\Scripts\;C:\Program Files\Python39\;C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\1E\Client\Extensibility\NomadBranch;C:\Program Files\PuTTY\;C:\Program Files (x86)\PIPC\bin\;C:\Program Files\Git\cmd;C:\Users\S6218378\AppData\Local\Microsoft\WindowsApps;;C:\Users\S6218378\AppData\Local\Programs\Microsoft VS Code\bin
+env PIP_DISABLE_PIP_VERSION_CHECK: 1
+env PYTHONIOENCODING: utf-8
+env PYTHONPATH: .
+env PYTHONHASHSEED: 0
+env TOX_ENV_NAME: train
+env TOX_WORK_DIR: C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env\.tox
+env TOX_ENV_DIR: C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env\.tox\test_package
+env VIRTUAL_ENV: C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env\.tox\test_package
+env COLUMNS: 237
+env LINES: 63
+metadata pid: 9540
+cwd: C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env
+allow: C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env\.tox\test_package\Scripts\*:train
+cmd: python classification_model/training_model/train.py
+exit_code: 0

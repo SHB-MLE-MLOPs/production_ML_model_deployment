@@ -1,0 +1,25 @@
+# This file allows to include or exclude in packaged ML model (into library) path, directory, file, folder, ...
+# we want to put within the packaged model
+
+include *.txt
+include *.md
+include *.pkl
+recursive-include ./classification_model/*
+
+include classification_model/datasets/train_data.csv
+include classification_model/datasets/test_data.csv
+include classification_model/new_prediction_with_model_trained/*.py
+include classification_model/processing/*.py
+include classification_model/save_trained_model_elements/data_preparation_pipeline/*.pkl
+include classification_model/save_trained_model_elements/features_engineering_pipeline/*.pkl
+include classification_model/save_trained_model_elements/training_estimator_pipeline/*.pkl
+include classification_model/VERSION
+include classification_model/config.yml
+
+include ./requirements/requirements.txt
+include ./requirements/test_requirements.txt
+exclude *.log
+exclude *.cfg
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]

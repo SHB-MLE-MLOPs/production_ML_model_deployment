@@ -1,0 +1,40 @@
+name: pred
+run_id: commands[1]
+env COMSPEC: C:\WINDOWS\system32\cmd.exe
+env NUMBER_OF_PROCESSORS: 8
+env PATHEXT: .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW
+env PROCESSOR_ARCHITECTURE: AMD64
+env PROGRAMDATA: C:\ProgramData
+env PROGRAMFILES: C:\Program Files
+env PROGRAMFILES(X86): C:\Program Files (x86)
+env SYSTEMDRIVE: C:
+env SYSTEMROOT: C:\WINDOWS
+env TEMP: C:\Users\S6218378\AppData\Local\Temp
+env TMP: C:\Users\S6218378\AppData\Local\Temp
+env USERPROFILE: C:\Users\S6218378
+env PATH: C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env\.tox\test_package\Scripts;C:\Program Files\Python39\Scripts\;C:\Program Files\Python39\;C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\1E\Client\Extensibility\NomadBranch;C:\Program Files\PuTTY\;C:\Program Files (x86)\PIPC\bin\;C:\Program Files\Git\cmd;C:\Users\S6218378\AppData\Local\Microsoft\WindowsApps;;C:\Users\S6218378\AppData\Local\Programs\Microsoft VS Code\bin
+env PIP_DISABLE_PIP_VERSION_CHECK: 1
+env PYTHONIOENCODING: utf-8
+env PYTHONPATH: .
+env PYTHONHASHSEED: 0
+env TOX_ENV_NAME: pred
+env TOX_WORK_DIR: C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env\.tox
+env TOX_ENV_DIR: C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env\.tox\test_package
+env VIRTUAL_ENV: C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env\.tox\test_package
+env COLUMNS: 237
+env LINES: 63
+metadata pid: 28812
+cwd: C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env
+allow: C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env\.tox\test_package\Scripts\*:train
+cmd: pytest -s -vv tests/
+exit_code: 0
+=========================================================================================================== test session starts ============================================================================================================
+platform win32 -- Python 3.9.13, pytest-7.4.2, pluggy-1.3.0 -- C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env\.tox\test_package\Scripts\python.exe
+cachedir: .tox\test_package\.pytest_cache
+rootdir: C:\Users\S6218378\production_ML_model_deployement\section_production_model_package_for_tox_env
+configfile: pyproject.toml
+collecting ... collected 1 item
+
+tests/test_new_prediction.py::test_make_prediction PASSED
+
+============================================================================================================ 1 passed in 0.25s =============================================================================================================
