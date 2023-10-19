@@ -1,0 +1,10 @@
+-r requirements.txt
+
+# testing requirements
+
+# === MODEL PACKAGING STEP ===
+pytest>=7.4.2,<8.0.0
+
+# === API BUILDING STEP ===
+requests>=2.31.0,<2.50.0
+httpx>=0.25.0,<1.0.0
