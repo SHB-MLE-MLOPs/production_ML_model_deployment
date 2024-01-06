@@ -22,7 +22,7 @@ DESCRIPTION = "Example classification model package from Train In Data."
 URL = "https://github.com/SHB-MLE-MLOPs/production_ML_model_deployment.git"
 EMAIL = "serge.bodjona@hotmail.com"
 AUTHOR = "SergeBodjona"
-REQUIRES_PYTHON = ">=3.10.0"
+REQUIRES_PYTHON = ">=3.9.0"
 
 # The rest you shouldn't have to touch too much :)
 # ------------------------------------------------
