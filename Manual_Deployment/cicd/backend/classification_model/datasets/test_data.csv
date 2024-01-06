@@ -1,0 +1,10 @@
+pclass,name,sex,age,sibsp,parch,ticket,fare,cabin,embarked,boat,body,homedest,survived
+3,"Rekic, Mr. Tido",male,38,0,0,349249,7.8958,D29 C26,S,20,147,"St Louis, MO",0
+2,"Phillips, Miss. Alice Frances Louisa",female,21,0,1,2,21.0,G22 K36,S,12,200,"Ilfracombe, Devon",1
+2,"Jacobsohn, Mr. Sidney Samuel",male,42,1,0,243847,27.0,L52 H26,S,30,187,London,0
+3,"Risien, Mr. Samuel Beard",male,55,0,0,364498,14.5,C72 C26,S,14,25,"Montreal, PQ / Chesterville, ON",0
+2,"Denbury, Mr. Herbert",male,25,0,0,31029,31.5,B589,S,78,176,"Guernsey / Elizabeth, NJ",0
+3,"Sandstrom, Miss. Marguerite Rut",female,4,1,1,9549,16.7,G6,S,13,258,"Hudson, NY",1
+1,"Anderson, Mr. Harry",male,48,0,0,19952,26.55,E12,S,3,146,"New York, NY",1
+1,"Peuchen, Major. Arthur Godfrey",male,52,0,0,113786,30.5,C104,S,6,31,"Toronto, ON",1
+2,"Ashby, Mr. John",male,57,0,0,244346,13.0,I365,S,36,15,"West Hoboken, NJ",0

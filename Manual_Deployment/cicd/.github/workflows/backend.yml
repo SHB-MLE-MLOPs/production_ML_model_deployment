@@ -1,0 +1,76 @@
+# name of your CICD code
+name: Build BACKEND
+
+# # when or what event needs for begin running the code
+# on:
+#   push:
+#     branches:
+#       - build_backend
+#       - 'releases/**'
+
+# when or what event needs for begin running the code
+on:
+  push:
+    branches:
+      - ga_backend
+  pull_request:
+    branches:
+      - ga_backend
+  # schedule: # frequence to launch actions. see this link https://crontab.guru/
+  #   - cron: "0 0 * * 1" # at 00:00 on Monday
+
+# jobs you want to run
+jobs:
+  ML-model-building-actions:
+    name: Checks, Fetch data, Train and Test ML model # define the name of job
+    
+    # runs-on: ubuntu-latest # define the machine where the code will run, Lunix here
+    # runs-on: macos-latest # define the machine where the code will run, MacOS here
+    runs-on: windows-latest # define the machine where the code will run, Windows here
+    
+    defaults:
+      run:
+        working-directory: ./backend/
+    
+    strategy:
+      matrix:
+        python-version: [3.11, 3.12]
+
+    steps:
+      - name: checkout code # define the name of step
+        uses: actions/checkout@v4 # define action to run at the step "checkout code", action can bee found on https://github.com/marketplace/actions
+      
+      # Here we begin CI (Continuous Integration)
+      - name: install python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{matrix.python-version}}
+      
+      - name: prepare python virtual environement - create, activate and upgarde pip
+        shell: pwsh
+        run: |
+          python -m venv venv
+          .\venv\Scripts\activate
+          # source venv/bin/activate # for Linux
+          # .\venv\Scripts\activate # for windows
+          pip install --upgrade pip
+      
+      - name: install and upgrade tox 
+        shell: pwsh
+        run: |
+          pip install --user tox
+          pip install --upgrade tox
+
+      - name: build ML model - checks, fetch data, train and test model
+        shell: pwsh
+        run: |
+          tox run
+
+      - name: build ML model - checks, fetch data, train and test model
+        shell: pwsh
+        run: |
+          tox run -e typechecks
+          tox run -e stylechecks
+          tox run -e lint
+          tox run -e train_model
+          tox run -e test_model
