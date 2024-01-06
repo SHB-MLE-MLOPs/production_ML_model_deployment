@@ -30,7 +30,7 @@ jobs:
     
     defaults:
       run:
-        working-directory: ./MIMD/backend/model_building/
+        working-directory: ./backend/
     
     strategy:
       matrix:
