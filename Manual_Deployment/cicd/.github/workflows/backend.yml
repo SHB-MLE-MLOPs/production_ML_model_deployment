@@ -37,7 +37,7 @@ jobs:
         python-version: [3.11, 3.12]
 
     steps:
-      - name: checkout code # define the name of step
+      - name: checkout code 
         uses: actions/checkout@v4 # define action to run at the step "checkout code", action can bee found on https://github.com/marketplace/actions
       
       # Here we begin CI (Continuous Integration)
