@@ -8,14 +8,14 @@ name: Build BACKEND
 #       - build_backend
 #       - 'releases/**'
 
-# when or what event needs for begin running the code
+# # when or what event needs for begin running the code
 on:
   push:
     branches:
       - ga_backend
-  pull_request:
-    branches:
-      - ga_backend
+  # pull_request:
+  #   branches:
+  #     - ga_backend
   # schedule: # frequence to launch actions. see this link https://crontab.guru/
   #   - cron: "0 0 * * 1" # at 00:00 on Monday
 
